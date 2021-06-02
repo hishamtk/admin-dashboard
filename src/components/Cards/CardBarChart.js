@@ -69,7 +69,7 @@ export default function CardBarChart() {
               ticks: {
                 min: 0,
                 max: 100,
-                step:20,
+               
                 callback: function (value) {
                   return ((value / this.max) * 100).toFixed(0) + "%"; // convert it to percentage
                 },
@@ -103,13 +103,14 @@ export default function CardBarChart() {
         <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
           <div className="flex flex-wrap items-center justify-between">
             <h6 className="text-blueGray-500  mb-1 text-xl ">
-              Earnign and client rating analytic
+              Earning and client rating analytic
             </h6>
-            <div className="w-32 relative flex space-x-3 text-white-350 text-sm">
-              <span className="absolute w-4 h-4 rounded-full"></span>
-              <p>Earning</p>
-              <span className="absolute w-4 h-4 rounded-full"></span>
-              <p>Rating</p>
+            <div className="w-32 relative flex space-x-3 text-white-350 flex-1 px-8 mx-4 text-xs">
+              <span className="absolute w-2 h-2 left-8 top-1 rounded-full bg-blue-650"></span>
+              <p className="px-2">Earning</p>
+              <span className="absolute  w-2 h-2 top-1 leftpx
+               rounded-full bg-blue-750"></span>
+              <p className="pl-4">Rating</p>
             </div>
           </div>
         </div>
